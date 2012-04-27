@@ -29,7 +29,7 @@ public class Odio extends Activity implements OnClickListener {
     	
     	String URL = var_url.getText().toString(); 
     	
-    	String message = "Streaming from: \n\n"+URL;
+    	String message = "Streaming radio from: \n\n"+URL;
     	
     	var_PB.getProgress();
     	
