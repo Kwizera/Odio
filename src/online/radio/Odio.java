@@ -31,7 +31,7 @@ public class Odio extends Activity implements OnClickListener {
     	
     	String message = "Streaming from: \n\n"+URL;
     	
-    	var_PB.getProgress();
+    	var_PB.setProgress(BIND_AUTO_CREATE);
     	
     	var_confirm.setText(message);    	
     	   	
