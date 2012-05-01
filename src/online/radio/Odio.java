@@ -19,6 +19,7 @@ public class Odio extends Activity implements OnClickListener {
         
         Button b = (Button)this.findViewById(R.id.btn_confirm);
         b.setOnClickListener(this);
+        
     }
     
     public void onClick(View v){
@@ -31,9 +32,9 @@ public class Odio extends Activity implements OnClickListener {
     	
     	String message = "Streaming radio from: \n\n"+URL;
     	
-    	var_PB.getProgress();
+    	var_confirm.setText(message); 
     	
-    	var_confirm.setText(message);    	
-    	   	
+    	var_PB.setVisibility(0);
+    	    	  	
     }
 }
