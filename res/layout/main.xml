@@ -22,24 +22,22 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:id="@+id/btn_confirm"
-        android:text="Enter"
-        
+        android:text="Enter"        
         />       
     
     
     <TextView 
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/txt_confirm"       
-        
+        android:id="@+id/txt_confirm"     
         />
+    
     
     <ProgressBar 
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:progress="0_to_10"
         android:id="@+id/progbar_progress"
-        
         />
     
     </LinearLayout>
