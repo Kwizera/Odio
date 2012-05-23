@@ -15,6 +15,7 @@ public final class R {
     }
     public static final class id {
         public static final int btn_confirm=0x7f050001;
+        public static final int media_controller=0x7f050004;
         public static final int progbar_progress=0x7f050003;
         public static final int txt_URL=0x7f050000;
         public static final int txt_confirm=0x7f050002;
