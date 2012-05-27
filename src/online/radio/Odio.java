@@ -43,36 +43,43 @@ public class Odio extends Activity implements OnClickListener {
     	
     	try {
 			var_player.setDataSource(URL);
-		} catch (IllegalArgumentException e) {
+		} catch (IllegalArgumentException error) {
 			// TODO Auto-generated catch block
-			e.printStackTrace();
-		} catch (IllegalStateException e) {
+			error.printStackTrace();
+		} catch (IllegalStateException error) {
 			// TODO Auto-generated catch block
-			e.printStackTrace();
-		} catch (IOException e) {
+			error.printStackTrace();
+		} catch (IOException error) {
 			// TODO Auto-generated catch block
-			e.printStackTrace();
+			error.printStackTrace();
 		}
     	
     	//Preparing the media player i.e "buffering"
     	
     	try {
 			var_player.prepare();
-		} catch (IllegalStateException e) {
+		} catch (IllegalStateException error) {
 			// TODO Auto-generated catch block
-			e.printStackTrace();
-		} catch (IOException e) {
+			error.printStackTrace();
+		} catch (IOException error) {
 			// TODO Auto-generated catch block
-			e.printStackTrace();
+			error.printStackTrace();
 		}
     	
     	var_player.start();
+    	
+    	if (var_player.isPlaying()) {
+    	
     	
     	String message = "Streaming radio from: \n\n"+URL;
     	
     	var_confirm.setText(message); 
     	
     	var_PB.setVisibility(0);
+    	}
+    	
+    	else
+    		var_confirm.setText("Unable to stream from "+URL);
     	    	  	
     }
 }
